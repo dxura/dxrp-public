@@ -19,7 +19,7 @@
 
 ## License
 
-This project is **closed-source** and licensed under a proprietary license. Please contact the support@dxura.com for licensing inquiries or contribution requests.
+This project is **closed-source** and licensed under a proprietary license. Please contact support@dxura.com for licensing inquiries or contribution requests.
 
 ## Acknowledgements
 
