@@ -24,10 +24,22 @@ async function translate(text: string, targetLang: Language): Promise<string> {
     model: GPT_MODEL,
     messages: [
       {
-        role: 'user',
-        content: `Translate the following Markdown document to ${targetLang}. Preserve all Markdown formatting, code blocks, and structure exactly. Only translate the text content, not the Markdown syntax itself:\n\n${text}`,
+        role: "system",
+        content: `You are a game localizer for roleplay servers. Translate naturally while preserving Markdown syntax.`,
       },
-    ]
+      {
+        role: "user",
+        content: `Translate this DarkRP rulebook to ${targetLang}.
+
+Rules:
+- Use simple, clear vocabulary (avoid literary/formal words)
+- Keep gaming terms in English: "fading door", "cooldown", "pry bar", "prying", "crowbar", "weed", "RDM/RDA", "NLR", "FearRP", "minging", "raid", "hit", "prop"
+- Translate "mug/mugging" with terms meaning "rob/robbery" or "hold up" in the target language
+- Preserve all Markdown formatting exactly
+
+${text}`,
+      },
+    ],
   });
 
   const content = completion.choices[0]?.message?.content;
