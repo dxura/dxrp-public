@@ -77,6 +77,7 @@ The sections below provide comprehensive information on specific aspects of game
 
 - Houses require a minimum of 1 entrance. You can block off doors that you don't use
 - Bases must always be accessible without the need to place props or entities
+- Every part of a base must be reachable by a raider, even if nothing is in that area
 - Builds should not take an unnecessary amount of public space. If you build in public areas, be reasonable
 - If you can shoot at someone, they must be able to see you and shoot back at you
 - You may not force players to crouch or jump at any point in your base, even to fight back
